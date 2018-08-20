@@ -62,7 +62,7 @@ class LocalDisplay(Thread):
         self.frame = cv2.imencode('.jpg', 255*np.ones([640, 480, 3]))[1]
         self.stop_request = Event()
 
-    def run(self):
+    def run(self, config):
         """ Overridden method that continually dumps images to the desired
             FIFO file.
         """
