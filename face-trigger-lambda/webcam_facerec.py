@@ -63,7 +63,7 @@ class LocalDisplay(Thread):
             '.jpg', 255*np.ones([self.resolution[0], self.resolution[1], 3]))[1]
         self.stop_request = Event()
 
-    def run(self, config):
+    def run(self):
         """ Overridden method that continually dumps images to the desired
             FIFO file.
         """
@@ -122,7 +122,7 @@ def cleanup():
 
     fps_counter.stop()
 
-    print("Avg. FPS:", np.mean(np.array(fps_queue)))
+    logging.debug("Avg. FPS: {:0.3f}".format(np.mean(np.array(fps_queue))))
 
 
 def start_over():
@@ -187,7 +187,7 @@ def infinite_infer_run():
         local_display.start()
 
         # init the fps counter object
-        fps_counter = RepeatedTimer(interval=counter_delay, function=fps_count)
+        fps_counter = RepeatedTimer(interval=5.0, function=fps_count)
 
         # reference to face detector
         face_detector = FaceDetector(face_area_threshold=face_area_threshold)
@@ -271,7 +271,7 @@ def infinite_infer_run():
                     logger.debug("End time: {}. Runtime: {}".format(
                         end_time, (end_time-start_time)))
 
-                    print("Predicted identity:", predicted_identity)
+                    logger.info("Predicted identity: {}".format(predicted_identity))
 
                     # start a new face recognition activity
                     start_over()

@@ -5,7 +5,7 @@ import logging
 
 
 def setup_logging(
-    default_path='log_config.json',
+    default_path='/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/config/log_config.json',
     default_level=logging.DEBUG,
     env_key='LOG_CFG'
 ):
@@ -24,7 +24,7 @@ def setup_logging(
         logging.basicConfig(level=default_level)
 
 
-def setup_config(config_file_path='config.json'):
+def setup_config(config_file_path='/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/config/config.json'):
     """
     Setup various parameters required for face-recognition
 
