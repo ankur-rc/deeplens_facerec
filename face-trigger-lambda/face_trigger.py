@@ -11,13 +11,14 @@ from __future__ import print_function
 from threading import Thread, Event
 import os
 import awscam
-import greengrasssdk
+# import greengrasssdk
 
 import cv2
 import time
 import numpy as np
 from collections import deque
 import logging
+import dlib
 
 import face_trigger
 
@@ -98,6 +99,48 @@ class LocalDisplay(Thread):
     def join(self):
         self.stop_request.set()
 
+def fps_count():
+    """
+    Outputs the frames per second
+    """
+    global frame_count
+    global fps
+    global fps_queue
+
+    fps = frame_count/1.0
+    fps_queue.append(fps)
+
+    frame_count = 0
+
+def cleanup():
+    """
+    Runs cleanup services
+    """
+    global fps_counter
+    global fps_queue
+
+    fps_counter.stop()
+
+    print("Avg. FPS:", np.mean(np.array(fps_queue)))
+
+
+def start_over():
+    """
+    Resets the following variables, if there is a discontinuity in detecting a face among consecutive frames:
+    1. faces - all detected faces 
+    2. landmarks - facial landmarks of the detected faces
+    3. sequence - the counter for the sequence
+    """
+
+    global sequence
+    global landmarks
+    global faces
+
+    sequence = 0
+    faces = []
+    landmarks = []
+
+
 
 def infinite_infer_run():
     """ Entry point of the lambda function"""
@@ -116,9 +159,9 @@ def infinite_infer_run():
         global landmarks
         global faces
 
-        face_area_threshold = 0.15
-        cam_height, cam_width = 360, 360
-        batch_size = 5
+        face_area_threshold = 0.03
+        cam_height, cam_width = 858, 480
+        batch_size = 1
         face_recognition_confidence_threshold = 0.25
         frame_skip_factor = 5
 
@@ -155,7 +198,7 @@ def infinite_infer_run():
             if not ret:
                 raise Exception('Failed to get frame from the stream')
             # Resize frame to the same size as the training set.
-            frame_resize = cv2.resize(frame, (cam_height, cam_width))
+            frame = cv2.resize(frame, (cam_height, cam_width))
 
             frame = cv2.flip(frame, 1)
 
@@ -164,13 +207,20 @@ def infinite_infer_run():
 
             # only process every 'frame_skip_factor' frame
             if not frame_count % frame_skip_factor == 0:
+		# get frame rate
+                fps_text = "FPS:" + str(fps)
+                cv2.putText(frame, fps_text, (1, 12),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255))
+
+                # Set the next frame in the local display stream.
+                local_display.set_frame_data(frame)
                 continue
 
             # convert to grayscale
             grayImg = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
             # equalize the histogram
-            grayImg = cv2.equalizeHist(grayImg)
+            #grayImg = cv2.equalizeHist(grayImg)
 
             # detect the largest face
             face = face_detector.detect(grayImg)
@@ -228,48 +278,13 @@ def infinite_infer_run():
     except Exception as ex:
         logging.exception("Exception: {}".format(ex))
 
+    finally:
+        cleanup()
+
 
 infinite_infer_run()
 
 
-def cleanup():
-    """
-    Runs cleanup services
-    """
-    global fps_counter
-    global fps_queue
-
-    fps_counter.stop()
-
-    print("Avg. FPS:", np.mean(np.array(fps_queue)))
 
 
-def start_over():
-    """
-    Resets the following variables, if there is a discontinuity in detecting a face among consecutive frames:
-    1. faces - all detected faces 
-    2. landmarks - facial landmarks of the detected faces
-    3. sequence - the counter for the sequence
-    """
 
-    global sequence
-    global landmarks
-    global faces
-
-    sequence = 0
-    faces = []
-    landmarks = []
-
-
-def fps_count():
-    """
-    Outputs the frames per second
-    """
-    global frame_count
-    global fps
-    global fps_queue
-
-    fps = frame_count/1.0
-    fps_queue.append(fps)
-
-    frame_count = 0
