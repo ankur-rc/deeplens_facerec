@@ -11,14 +11,12 @@ from __future__ import print_function
 from threading import Thread, Event
 import os
 import awscam
-# import greengrasssdk
 
 import cv2
 import time
 import numpy as np
 from collections import deque
 import logging
-import dlib
 
 import face_trigger
 
@@ -26,7 +24,7 @@ from face_trigger.model.deep.FaceRecognizer import FaceRecognizer
 from face_trigger.process.post_process import FaceDetector, LandmarkDetector, FaceAlign
 from face_trigger.utils.common import RepeatedTimer
 
-logging.basicConfig(level=logging.DEBUG)
+from configurator import setup_config, setup_logging
 
 fps_counter = None  # repeated timer object
 frame_count = 0  # frames ingested
@@ -36,6 +34,7 @@ landmarks = []  # list to hold the face landmarks across the batch
 faces = []  # list to hold face bounding boxes across the batch
 # queue holding information of the last fps counts; used to generate avg, fps
 fps_queue = deque(maxlen=100)
+counter_delay = 5.0 # fps counter update frequency in secs
 
 
 class LocalDisplay(Thread):
@@ -54,16 +53,17 @@ class LocalDisplay(Thread):
         super(LocalDisplay, self).__init__()
         # List of valid resolutions
         RESOLUTION = {'1080p': (1920, 1080), '720p': (
-            1280, 720), '480p': (858, 480)}
+            1280, 720), '480p': (858, 480), '360p': (640, 360)}
         if resolution not in RESOLUTION:
             raise Exception("Invalid resolution")
         self.resolution = RESOLUTION[resolution]
         # Initialize the default image to be a white canvas. Clients
         # will update the image when ready.
-        self.frame = cv2.imencode('.jpg', 255*np.ones([640, 480, 3]))[1]
+        self.frame = cv2.imencode(
+            '.jpg', 255*np.ones([self.resolution[0], self.resolution[1], 3]))[1]
         self.stop_request = Event()
 
-    def run(self):
+    def run(self, config):
         """ Overridden method that continually dumps images to the desired
             FIFO file.
         """
@@ -106,8 +106,9 @@ def fps_count():
     global frame_count
     global fps
     global fps_queue
+    global counter_delay
 
-    fps = frame_count/1.0
+    fps = frame_count/counter_delay
     fps_queue.append(fps)
 
     frame_count = 0
@@ -144,6 +145,10 @@ def start_over():
 
 def infinite_infer_run():
     """ Entry point of the lambda function"""
+
+    setup_logging()
+    config = setup_config()
+
     try:
 
         """
@@ -158,23 +163,31 @@ def infinite_infer_run():
         global sequence
         global landmarks
         global faces
+	global counter_delay
 
-        face_area_threshold = 0.03
-        cam_height, cam_width = 858, 480
-        batch_size = 1
-        face_recognition_confidence_threshold = 0.25
-        frame_skip_factor = 5
+        # setup the configuration
+        face_area_threshold = config.get("face_area_threshold", 0.25)
+        cam_height, cam_width = config.get(
+            "cam_height", 360), config.get("cam_width", 360)
+        resolution = config.get("resolution", "480p")
+        batch_size = config.get("batch_size", 1)
+        face_recognition_confidence_threshold = config.get(
+            "face_recognition_confidence_threshold", 0.25)
+        frame_skip_factor = config.get("frame_skip_factor", 5)
+        unknown_class = config.get("unknown_class", -1)
 
-        svm_model_path = "classifier.pkl"
-        label_mapping_path = "label_mapping.pkl"
+        svm_model_path = config.get(
+            "svm_model_path", "classifier.pkl")
+        label_mapping_path = config.get(
+            "label_mapping_path", "label_mapping.pkl")
 
         # Create a local display instance that will dump the image bytes to a FIFO
         # file that the image can be rendered locally.
-        local_display = LocalDisplay('480p')
+        local_display = LocalDisplay(resolution)
         local_display.start()
 
         # init the fps counter object
-        fps_counter = RepeatedTimer(interval=1.0, function=fps_count)
+        fps_counter = RepeatedTimer(interval=counter_delay, function=fps_count)
 
         # reference to face detector
         face_detector = FaceDetector(face_area_threshold=face_area_threshold)
@@ -252,7 +265,7 @@ def infinite_infer_run():
                         images=faces, landmarks=landmarks)
 
                     predicted_identity = face_recognizer.infer(
-                        face_embeddings, threshold=face_recognition_confidence_threshold)
+                        face_embeddings, threshold=face_recognition_confidence_threshold, unknown_index=unknown_class)
 
                     end_time = time.time()  # batch:100 s: ~1.5 sec; p:
                     logger.debug("End time: {}. Runtime: {}".format(
@@ -283,8 +296,3 @@ def infinite_infer_run():
 
 
 infinite_infer_run()
-
-
-
-
-
