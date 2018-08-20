@@ -166,9 +166,10 @@ def infinite_infer_run():
 	global counter_delay
 
         # setup the configuration
-        face_area_threshold = config.get("face_area_threshold", 0.25)
-        cam_height, cam_width = config.get(
-            "cam_height", 480), config.get("cam_width", 858)
+        face_area_threshold = config.get("face_area_threshold", 0.03)
+        cam_height = config.get(
+            "cam_height", 480)
+	cam_width = config.get("cam_width", 858)
         resolution = config.get("resolution", "480p")
         batch_size = config.get("batch_size", 1)
         face_recognition_confidence_threshold = config.get(
@@ -185,7 +186,7 @@ def infinite_infer_run():
 
         # Create a local display instance that will dump the image bytes to a FIFO
         # file that the image can be rendered locally.
-        local_display = LocalDisplay('480p')
+        local_display = LocalDisplay(resolution)
         local_display.start()
 
         # init the fps counter object
@@ -213,7 +214,7 @@ def infinite_infer_run():
             if not ret:
                 raise Exception('Failed to get frame from the stream')
             # Resize frame to the same size as the training set.
-            frame = cv2.resize(frame, (cam_height, cam_width))
+            frame = cv2.resize(frame, (cam_width, cam_height))
 
             frame = cv2.flip(frame, 1)
 

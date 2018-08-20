@@ -1,5 +1,5 @@
 {
-    "face_area_threshold": 0.05,
+    "face_area_threshold": 0.03,
     "cam_height": 480,
     "cam_width": 858,
     "batch_size": 3,
@@ -8,5 +8,5 @@
     "svm_model_path": "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl",
     "label_mapping_path": "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl",
     "unknown_class": -1,
-    "resolution": "360p"
+    "resolution": "480p"
 }
