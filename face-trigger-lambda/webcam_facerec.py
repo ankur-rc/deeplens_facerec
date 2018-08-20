@@ -53,14 +53,14 @@ class LocalDisplay(Thread):
         super(LocalDisplay, self).__init__()
         # List of valid resolutions
         RESOLUTION = {'1080p': (1920, 1080), '720p': (
-            1280, 720), '480p': (858, 480), '360p': (640, 360)}
+            1280, 720), '480p': (858, 480)}
         if resolution not in RESOLUTION:
             raise Exception("Invalid resolution")
         self.resolution = RESOLUTION[resolution]
         # Initialize the default image to be a white canvas. Clients
         # will update the image when ready.
         self.frame = cv2.imencode(
-            '.jpg', 255*np.ones([self.resolution[0], self.resolution[1], 3]))[1]
+            '.jpg', 255*np.ones([640, 480, 3]))[1]
         self.stop_request = Event()
 
     def run(self):
@@ -166,24 +166,21 @@ def infinite_infer_run():
 	global counter_delay
 
         # setup the configuration
-        face_area_threshold = config.get("face_area_threshold", 0.25)
-        cam_height, cam_width = config.get(
-            "cam_height", 360), config.get("cam_width", 360)
-        resolution = config.get("resolution", "480p")
-        batch_size = config.get("batch_size", 1)
-        face_recognition_confidence_threshold = config.get(
-            "face_recognition_confidence_threshold", 0.25)
-        frame_skip_factor = config.get("frame_skip_factor", 5)
-        unknown_class = config.get("unknown_class", -1)
+        face_area_threshold = 0.03
+        cam_height, cam_width = 858, 480
+        batch_size = 3
+        face_recognition_confidence_threshold = 0.25
+        frame_skip_factor = 5
+	unknown_class =-1
 
-        svm_model_path = config.get(
-            "svm_model_path", "classifier.pkl")
-        label_mapping_path = config.get(
-            "label_mapping_path", "label_mapping.pkl")
+        svm_model_path = "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl"
+	label_mapping_path = "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl"
+
+	print(face_area_threshold)
 
         # Create a local display instance that will dump the image bytes to a FIFO
         # file that the image can be rendered locally.
-        local_display = LocalDisplay(resolution)
+        local_display = LocalDisplay('480p')
         local_display.start()
 
         # init the fps counter object
@@ -233,10 +230,12 @@ def infinite_infer_run():
             grayImg = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
             # equalize the histogram
-            #grayImg = cv2.equalizeHist(grayImg)
+            # grayImg = cv2.equalizeHist(grayImg)
 
             # detect the largest face
             face = face_detector.detect(grayImg)
+
+	    print(face)
 
             # if a face was detected
             if face is not None:

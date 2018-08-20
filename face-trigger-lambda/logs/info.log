@@ -1,6 +1,35 @@
-2018-08-20 14:51:04,055 - root - INFO - Configuration parameters are: {u'cam_height': 360, u'unknown_class': -1, u'camera_index': 0, u'batch_size': 10, u'face_area_threshold': 0.15, u'face_recognition_confidence_threshold': 0.25, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 3, u'cam_width': 360}
-2018-08-20 14:53:15,610 - root - INFO - Configuration parameters are: {u'cam_height': 360, u'unknown_class': -1, u'camera_index': 0, u'batch_size': 10, u'face_area_threshold': 0.15, u'face_recognition_confidence_threshold': 0.25, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 3, u'cam_width': 360}
-2018-08-20 14:55:02,442 - root - INFO - Configuration parameters are: {u'cam_height': 360, u'unknown_class': -1, u'camera_index': 0, u'batch_size': 10, u'face_area_threshold': 0.15, u'face_recognition_confidence_threshold': 0.25, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 3, u'cam_width': 360}
-2018-08-20 14:58:13,924 - root - INFO - Configuration parameters are: {u'cam_height': 360, u'unknown_class': -1, u'camera_index': 0, u'batch_size': 10, u'face_area_threshold': 0.15, u'face_recognition_confidence_threshold': 0.25, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 3, u'cam_width': 360}
-2018-08-20 14:59:53,744 - root - INFO - Configuration parameters are: {u'cam_height': 360, u'unknown_class': -1, u'camera_index': 0, u'batch_size': 10, u'face_area_threshold': 0.05, u'face_recognition_confidence_threshold': 0.25, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 3, u'cam_width': 360}
-2018-08-20 15:00:15,701 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:21:12,604 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.05, u'cam_height': 360, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'360p', u'cam_width': 360}
+2018-08-20 16:26:13,692 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.005, u'cam_height': 360, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'360p', u'cam_width': 360}
+2018-08-20 16:28:08,588 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.05, u'cam_height': 360, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'360p', u'cam_width': 640}
+2018-08-20 16:31:51,315 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.05, u'cam_height': 360, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'360p', u'cam_width': 640}
+2018-08-20 16:31:53,313 - root - ERROR - Exception: Path to trained classifier model does not exist!
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 195, in infinite_infer_run
+    dnn_model_path=None, classifier_model_path=svm_model_path, label_map_path=label_mapping_path)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/face_trigger/model/deep/FaceRecognizer.py", line 59, in __init__
+    self.classifier = self.load(classifier_model_path)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/face_trigger/model/deep/FaceRecognizer.py", line 133, in load
+    raise Exception("Path to trained classifier model does not exist!")
+Exception: Path to trained classifier model does not exist!
+2018-08-20 16:32:44,886 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.05, u'cam_height': 360, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'360p', u'cam_width': 640}
+2018-08-20 16:32:49,298 - root - ERROR - Exception: global name 'unknown_class' is not defined
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 266, in infinite_infer_run
+    face_embeddings, threshold=face_recognition_confidence_threshold, unknown_index=unknown_class)
+NameError: global name 'unknown_class' is not defined
+2018-08-20 16:34:21,794 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.05, u'cam_height': 360, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'360p', u'cam_width': 640}
+2018-08-20 16:34:30,448 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:33,327 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:36,173 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:38,854 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:41,847 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:44,922 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:48,191 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:51,280 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:54,102 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:56,990 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:34:59,837 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:35:03,105 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:35:05,985 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:35:08,801 - __main__ - INFO - Predicted identity: -1
+2018-08-20 16:35:11,951 - __main__ - INFO - Predicted identity: -1
