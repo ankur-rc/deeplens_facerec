@@ -166,15 +166,20 @@ def infinite_infer_run():
 	global counter_delay
 
         # setup the configuration
-        face_area_threshold = 0.03
-        cam_height, cam_width = 858, 480
-        batch_size = 3
-        face_recognition_confidence_threshold = 0.25
-        frame_skip_factor = 5
-	unknown_class =-1
+        face_area_threshold = config.get("face_area_threshold", 0.25)
+        cam_height, cam_width = config.get(
+            "cam_height", 480), config.get("cam_width", 858)
+        resolution = config.get("resolution", "480p")
+        batch_size = config.get("batch_size", 1)
+        face_recognition_confidence_threshold = config.get(
+            "face_recognition_confidence_threshold", 0.25)
+        frame_skip_factor = config.get("frame_skip_factor", 5)
+        unknown_class = config.get("unknown_class", -1)
 
-        svm_model_path = "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl"
-	label_mapping_path = "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl"
+        svm_model_path = config.get(
+            "svm_model_path", "classifier.pkl")
+        label_mapping_path = config.get(
+"label_mapping_path", "label_mapping.pkl")
 
 	print(face_area_threshold)
 
