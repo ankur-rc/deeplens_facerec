@@ -241,8 +241,6 @@ def infinite_infer_run():
             # detect the largest face
             face = face_detector.detect(grayImg)
 
-	    print(face)
-
             # if a face was detected
             if face is not None:
 
