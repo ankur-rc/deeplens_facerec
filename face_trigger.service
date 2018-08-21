@@ -1,12 +1,16 @@
 [Unit]
-Description=Face Trigger - Real-time face recognition
-StartLimitIntervalSec=3
+Description=Face Trigger -- Real-time face recognition
+
 [Service]
 Type=simple
-Restart=always
-RestartSec=1
+
+Restart=on-failure
+RestartSec=10
+StartLimitIntervalSec=100
+StartLimitBurst=3
+
 User=aws_cam
-ExecStart=
+ExecStart=/home/aws_cam/lambda_test/bin/python2.7 /home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py
 
 [Install]
 WantedBy=multi-user.target
