@@ -44,3 +44,36 @@ NameError: global name 'unknown_class' is not defined
 2018-08-20 16:51:15,368 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
 2018-08-20 16:51:24,258 - __main__ - INFO - Predicted identity: -1
 2018-08-20 17:36:05,445 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-20 17:38:13,014 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-20 17:38:50,732 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:38:53,506 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:38:56,118 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:38:59,227 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:25,066 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:27,849 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:30,773 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:33,450 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:36,435 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:39,234 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:41,904 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:44,958 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:47,810 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:51,181 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:54,251 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:57,034 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:40:00,099 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:40:02,787 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:50,031 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:53,064 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:55,867 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:58,547 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:10,343 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:18,657 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:30,141 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:35,740 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:39,368 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:46:04,322 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:46:15,108 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:46:17,888 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:52:26,063 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-20 17:54:46,449 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}

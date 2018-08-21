@@ -115,3 +115,162 @@
 2018-08-20 17:36:05,445 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
 2018-08-20 17:36:07,005 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
 2018-08-20 17:36:07,005 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-20 17:38:13,014 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-20 17:38:14,805 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-20 17:38:14,805 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-20 17:38:50,730 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 59 597 784]
+2018-08-20 17:38:50,730 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 59 597 784]
+2018-08-20 17:38:50,731 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:50,731 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:50,732 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:38:53,505 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [784  30 131]
+2018-08-20 17:38:53,505 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [784  30 131]
+2018-08-20 17:38:53,505 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:53,505 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:53,506 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:38:56,116 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:38:56,116 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:38:56,117 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:56,117 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:56,118 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:38:59,225 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:38:59,225 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:38:59,226 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:59,226 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:38:59,227 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:25,064 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [131  30  30]
+2018-08-20 17:39:25,064 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [131  30  30]
+2018-08-20 17:39:25,065 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:25,065 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:25,066 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:27,847 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:27,847 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:27,848 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:27,848 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:27,849 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:30,772 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:30,772 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:30,773 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:30,773 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:30,773 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:33,448 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:33,448 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:33,449 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:33,449 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:33,450 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:36,433 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:36,433 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:36,434 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:36,434 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:36,435 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:39,232 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:39,232 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:39,233 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:39,233 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:39,234 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:41,888 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:41,888 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:41,903 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:41,903 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:41,904 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:44,950 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30  0 72]
+2018-08-20 17:39:44,950 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30  0 72]
+2018-08-20 17:39:44,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:44,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:44,958 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:47,809 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 72 72]
+2018-08-20 17:39:47,809 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 72 72]
+2018-08-20 17:39:47,810 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:47,810 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:47,810 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:51,179 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:51,179 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:39:51,180 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:51,180 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:51,181 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:54,249 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 72 72]
+2018-08-20 17:39:54,249 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 72 72]
+2018-08-20 17:39:54,250 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:54,250 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:54,251 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:39:57,033 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 72]
+2018-08-20 17:39:57,033 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 72]
+2018-08-20 17:39:57,034 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:57,034 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:39:57,034 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:40:00,093 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 72 30]
+2018-08-20 17:40:00,093 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 72 30]
+2018-08-20 17:40:00,094 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:40:00,094 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:40:00,099 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:40:02,785 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [72 30 30]
+2018-08-20 17:40:02,785 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [72 30 30]
+2018-08-20 17:40:02,786 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:40:02,786 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:40:02,787 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:50,029 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [597 268 114]
+2018-08-20 17:44:50,029 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [597 268 114]
+2018-08-20 17:44:50,030 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:50,030 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:50,031 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:53,062 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [114 114  30]
+2018-08-20 17:44:53,062 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [114 114  30]
+2018-08-20 17:44:53,063 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:53,063 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:53,064 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:55,866 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:44:55,866 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 30 30]
+2018-08-20 17:44:55,867 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:55,867 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:55,867 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:44:58,546 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 14 30]
+2018-08-20 17:44:58,546 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [30 14 30]
+2018-08-20 17:44:58,547 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:58,547 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:44:58,547 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:10,341 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 0 30 30]
+2018-08-20 17:45:10,341 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 0 30 30]
+2018-08-20 17:45:10,342 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 30 -1]
+2018-08-20 17:45:10,342 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 30 -1]
+2018-08-20 17:45:10,343 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:18,655 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [  0 597   0]
+2018-08-20 17:45:18,655 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [  0 597   0]
+2018-08-20 17:45:18,656 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:18,656 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:18,657 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:30,140 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [597 597  30]
+2018-08-20 17:45:30,140 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [597 597  30]
+2018-08-20 17:45:30,141 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:30,141 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:30,141 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:35,738 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 30  30 236]
+2018-08-20 17:45:35,738 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 30  30 236]
+2018-08-20 17:45:35,739 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:35,739 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:35,740 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:45:39,366 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [57 30 30]
+2018-08-20 17:45:39,366 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [57 30 30]
+2018-08-20 17:45:39,367 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:39,367 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:45:39,368 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:46:04,321 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [236 597 965]
+2018-08-20 17:46:04,321 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [236 597 965]
+2018-08-20 17:46:04,322 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:46:04,322 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:46:04,322 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:46:15,106 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [360   0   0]
+2018-08-20 17:46:15,106 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [360   0   0]
+2018-08-20 17:46:15,107 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:46:15,107 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:46:15,108 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:46:17,886 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 67 597   0]
+2018-08-20 17:46:17,886 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [ 67 597   0]
+2018-08-20 17:46:17,887 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:46:17,887 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-20 17:46:17,888 - __main__ - INFO - Predicted identity: -1
+2018-08-20 17:52:26,063 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-20 17:52:32,590 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-20 17:52:32,590 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-20 17:54:46,449 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-20 17:54:48,074 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-20 17:54:48,074 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
