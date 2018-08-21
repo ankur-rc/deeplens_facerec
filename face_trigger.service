@@ -6,7 +6,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=aws_cam
-ExecStart=/usr/bin/env php /path/to/server.php
+ExecStart=
 
 [Install]
 WantedBy=multi-user.target

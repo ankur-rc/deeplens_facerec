@@ -34,7 +34,7 @@ landmarks = []  # list to hold the face landmarks across the batch
 faces = []  # list to hold face bounding boxes across the batch
 # queue holding information of the last fps counts; used to generate avg, fps
 fps_queue = deque(maxlen=100)
-counter_delay = 5.0 # fps counter update frequency in secs
+counter_delay = 5.0  # fps counter update frequency in secs
 
 
 class LocalDisplay(Thread):
@@ -99,6 +99,7 @@ class LocalDisplay(Thread):
     def join(self):
         self.stop_request.set()
 
+
 def fps_count():
     """
     Outputs the frames per second
@@ -112,6 +113,7 @@ def fps_count():
     fps_queue.append(fps)
 
     frame_count = 0
+
 
 def cleanup():
     """
@@ -142,7 +144,6 @@ def start_over():
     landmarks = []
 
 
-
 def infinite_infer_run():
     """ Entry point of the lambda function"""
 
@@ -163,13 +164,13 @@ def infinite_infer_run():
         global sequence
         global landmarks
         global faces
-	global counter_delay
+        global counter_delay
 
         # setup the configuration
         face_area_threshold = config.get("face_area_threshold", 0.03)
         cam_height = config.get(
             "cam_height", 480)
-	cam_width = config.get("cam_width", 858)
+        cam_width = config.get("cam_width", 858)
         resolution = config.get("resolution", "480p")
         batch_size = config.get("batch_size", 1)
         face_recognition_confidence_threshold = config.get(
@@ -180,9 +181,9 @@ def infinite_infer_run():
         svm_model_path = config.get(
             "svm_model_path", "classifier.pkl")
         label_mapping_path = config.get(
-"label_mapping_path", "label_mapping.pkl")
+            "label_mapping_path", "label_mapping.pkl")
 
-	print(face_area_threshold)
+        print(face_area_threshold)
 
         # Create a local display instance that will dump the image bytes to a FIFO
         # file that the image can be rendered locally.
@@ -223,10 +224,10 @@ def infinite_infer_run():
 
             # only process every 'frame_skip_factor' frame
             if not frame_count % frame_skip_factor == 0:
-		# get frame rate
+                        # get frame rate
                 fps_text = "FPS:" + str(fps)
                 cv2.putText(frame, fps_text, (1, 12),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255))
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255))
 
                 # Set the next frame in the local display stream.
                 local_display.set_frame_data(frame)
@@ -241,7 +242,7 @@ def infinite_infer_run():
             # detect the largest face
             face = face_detector.detect(grayImg)
 
-	    print(face)
+            print(face)
 
             # if a face was detected
             if face is not None:
@@ -276,7 +277,8 @@ def infinite_infer_run():
                     logger.debug("End time: {}. Runtime: {}".format(
                         end_time, (end_time-start_time)))
 
-                    logger.info("Predicted identity: {}".format(predicted_identity))
+                    logger.info("Predicted identity: {}".format(
+                        predicted_identity))
 
                     # start a new face recognition activity
                     start_over()
