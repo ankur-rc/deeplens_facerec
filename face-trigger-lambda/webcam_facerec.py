@@ -130,7 +130,8 @@ def speak(unknown=False, person_name=None):
         tts.write_to_fp(sf)
         sf.seek(0)
         mixer.music.load(sf)
-        mixer.music.play()
+	if not mixer.music.get_busy():
+        	mixer.music.play()
 
         time.sleep(4)
 	#engine = pyttsx.init()
