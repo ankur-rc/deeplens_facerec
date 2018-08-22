@@ -136,8 +136,8 @@ def speak(unknown=False, person_name=None):
 
         time.sleep(4)
 
-    except Exception:
-        raise
+    except Exception as ex:
+        logging.exception("Exception: {}".format(ex))
 
 
 def fps_count():

@@ -1,0 +1,9 @@
+2018-08-22 11:53:28,217 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc890106f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 321, in infinite_infer_run
+    speak(unknown=False, person_name=predicted_identity)
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc890106f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))

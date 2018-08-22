@@ -2957,3 +2957,32 @@ NameError: global name 'unknown_class' is not defined
 2018-08-21 16:58:40,734 - __main__ - INFO - Predicted identity: -1
 2018-08-21 17:00:09,366 - __main__ - INFO - Predicted identity: -1
 2018-08-21 17:01:08,595 - __main__ - INFO - Predicted identity: -1
+2018-08-21 17:16:43,008 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-21 17:16:56,990 - __main__ - INFO - Predicted identity: 41
+2018-08-21 17:17:05,990 - __main__ - INFO - Predicted identity: 41
+2018-08-21 17:17:26,074 - __main__ - INFO - Predicted identity: 41
+2018-08-21 17:17:34,934 - __main__ - INFO - Predicted identity: 41
+2018-08-21 17:18:44,805 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-21 17:21:11,360 - __main__ - INFO - Predicted identity: 41
+2018-08-21 17:21:20,502 - __main__ - INFO - Predicted identity: 41
+2018-08-21 17:21:29,268 - __main__ - INFO - Predicted identity: 41
+2018-08-21 17:21:48,141 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:46:45,450 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:47:37,004 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:48:00,048 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:48:38,933 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:48:54,390 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:49:06,640 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:49:15,214 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:49:24,896 - __main__ - INFO - Predicted identity: 41
+2018-08-22 11:51:11,408 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 11:53:27,882 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc890106cd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 11:53:28,217 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc890106f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 321, in infinite_infer_run
+    speak(unknown=False, person_name=predicted_identity)
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc890106f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
