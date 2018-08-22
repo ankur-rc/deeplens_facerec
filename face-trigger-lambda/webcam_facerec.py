@@ -21,6 +21,7 @@ import logging
 from gtts import gTTS
 from pygame import mixer
 from tempfile import TemporaryFile
+import pyttsx
 
 import face_trigger
 
@@ -110,22 +111,19 @@ def speak(unknown=False, person_name=None):
     :param bool unknown: flag to indicate whether the person was unidentified
     :param str person_name: the name of the person. If unknown is set to TRue, no need to set this parameter.
     """
-    voice_path = os.path.join(os.path.dirname(
-        os.path.abspath(__file__)), "voice")
-
-    if not os.path.exists(voice_path):
-        os.makedirs(voice_path)
 
     person_unknown_msg = "Person cannot be identified"
     person_id_msg_prefix = "Person identified as "
+    msg = ""
     try:
         tts = None
         if unknown is True:
-            tts = gTTS(person_unknown_msg)
+	    msg = person_unknown_msg
         else:
             msg = person_id_msg_prefix + \
                 str(unicode(person_name, encoding='utf-8'))
-            tts = gTTS(msg)
+            
+	tts = gTTS(msg)
 
         mixer.init()
         sf = TemporaryFile()
@@ -135,10 +133,20 @@ def speak(unknown=False, person_name=None):
         mixer.music.play()
 
         time.sleep(4)
+	#engine = pyttsx.init()
+	#engine.say(msg)
+	#engine.runAndWait()
 
     except Exception as ex:
         logging.exception("Exception: {}".format(ex))
-
+	
+	try:
+		engine = pyttsx.init()
+		engine.say(msg)
+		engine.runAndWait()
+	
+	except Exception as ex:
+        	logging.exception("Exception: {}".format(ex))
 
 def fps_count():
     """

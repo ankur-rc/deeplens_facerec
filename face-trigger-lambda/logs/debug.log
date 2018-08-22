@@ -14773,3 +14773,762 @@ Traceback (most recent call last):
   File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
     str(e))
 gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc890106f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:04:09,153 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:04:15,246 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:04:15,246 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:07:11,021 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:07:11,021 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:07:11,022 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:07:11,022 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:07:11,031 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc78e9cacd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:07:11,405 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc78e9caf10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc78e9caf10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:07:11,410 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:07:14,327 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:07:14,327 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:07:14,346 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:07:14,346 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:07:14,354 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc78e970d50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:07:14,364 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc78e970d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc78e970d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:07:14,365 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:07:17,403 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:07:17,403 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:07:17,404 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:07:17,404 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:07:17,418 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc78e970c50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:07:17,423 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc78e970c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fc78e970c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:07:17,424 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:08:09,189 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:08:14,914 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:08:14,914 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:13:14,949 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:14,949 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:14,950 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:14,950 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:14,958 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669dd2cd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:15,898 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669dd2f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669dd2f10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:15,903 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:21,670 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:21,670 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:21,671 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:21,671 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:21,676 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77d50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:21,682 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:21,683 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:25,506 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:25,506 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:25,507 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:25,507 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:25,529 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77c50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:25,535 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:25,536 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:31,839 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:31,839 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:31,840 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:31,840 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:31,864 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77b50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:31,877 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77c90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77c90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:31,878 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:35,865 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:35,865 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:35,866 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:35,866 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:35,880 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77b90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:35,893 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77d50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77d50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:35,894 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:39,189 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:39,189 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:39,190 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:39,190 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:39,194 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77bd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:39,203 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77c50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77c50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:39,204 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:42,216 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:42,216 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:42,225 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:42,225 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:42,234 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77ad0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:42,242 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77b50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77b50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:42,243 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:47,557 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:47,557 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:47,558 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:47,558 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:47,563 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77910>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:47,572 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77b90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77b90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:47,575 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:13:53,772 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:53,772 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:13:53,773 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:53,773 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:13:53,777 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d779d0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:53,797 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77bd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77bd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:13:53,798 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:14:08,582 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:14:08,582 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:14:08,583 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:14:08,583 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:14:08,596 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77d10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:14:08,608 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77ad0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77ad0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:14:08,609 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:14:11,595 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:14:11,595 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:14:11,596 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:14:11,596 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:14:11,604 - gtts.tts - WARNING - Unable to get language list: HTTPConnectionPool(host='translate.google.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fa669d77c10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:14:11,609 - root - ERROR - Exception: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77910>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 132, in speak
+    tts.write_to_fp(sf)
+  File "/home/aws_cam/lambda_test/local/lib/python2.7/site-packages/gtts/tts.py", line 192, in write_to_fp
+    str(e))
+gTTSError: Connection error during token calculation: HTTPSConnectionPool(host='translate.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa669d77910>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+2018-08-22 12:14:11,610 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:19:56,528 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:19:56,528 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:19:56,529 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:19:56,529 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:03,432 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:20:06,296 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:06,296 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:06,297 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:06,297 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:12,085 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:20:14,940 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:14,940 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:14,942 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:14,942 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:21,346 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:20:26,950 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:26,950 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:26,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:26,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:34,684 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:20:39,774 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:39,774 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:39,775 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:39,775 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:47,192 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:20:51,131 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:51,131 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:20:51,132 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:51,132 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:20:57,160 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:21:00,589 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:00,589 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:00,590 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:00,590 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:06,452 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:21:13,923 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:13,923 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:13,924 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:13,924 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:21,388 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:21:24,663 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:24,663 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:24,664 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:24,664 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:31,628 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:21:34,837 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:34,837 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:34,838 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:34,838 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:41,809 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:21:44,782 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:44,782 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:44,783 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:44,783 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:50,896 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:21:53,884 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:53,884 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:21:53,885 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:21:53,885 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:02,661 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:22:07,734 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:07,734 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:07,885 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:07,885 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:15,170 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:22:17,911 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:17,911 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:18,061 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:18,061 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:25,325 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:22:29,298 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:29,298 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:29,301 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:29,301 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:35,528 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:22:43,702 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:43,702 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:22:43,703 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:43,703 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:22:50,498 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:24:30,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:24:30,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:24:30,631 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:24:30,631 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:24:36,731 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:24:41,057 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:24:41,057 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:24:41,058 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:24:41,058 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:24:47,236 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:24:51,314 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:24:51,314 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:24:51,315 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:24:51,315 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:24:58,143 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:25:02,498 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:25:02,498 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:25:02,499 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:25:02,499 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:25:09,349 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:25:14,366 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:25:14,366 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:25:14,367 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:25:14,367 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:25:20,088 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:28:29,478 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:28:29,478 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:28:29,479 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:28:29,479 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:28:36,240 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:32:32,805 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:32:34,601 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:32:34,601 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:32:56,070 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:32:56,070 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:32:56,071 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:32:56,071 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:33:02,805 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:33:06,062 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:33:06,062 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:33:06,063 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:33:06,063 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:33:11,858 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:33:14,934 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:33:14,934 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:33:14,935 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:33:14,935 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:33:20,759 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:36:21,357 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:36:22,934 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:36:22,934 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:36:36,339 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:36:36,339 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:36:36,340 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:36:36,340 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:36:39,286 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:36:41,860 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:36:41,860 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:36:41,861 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:36:41,861 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:36:43,739 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:37:53,747 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:37:53,747 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:37:53,748 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:37:53,748 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:37:55,629 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:37:57,921 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:37:57,921 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:37:58,069 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:37:58,069 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:37:59,941 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:02,973 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:02,973 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:02,974 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:02,974 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:04,843 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:07,326 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:07,326 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:07,327 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:07,327 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:09,214 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:21,207 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:21,207 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:21,208 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:21,208 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:23,090 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:25,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:25,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:25,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:25,951 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:27,825 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:43,729 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:43,729 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:43,730 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 -1]
+2018-08-22 12:38:43,730 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 -1]
+2018-08-22 12:38:45,601 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:47,973 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:47,973 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:47,974 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 34 34]
+2018-08-22 12:38:47,974 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 34 34]
+2018-08-22 12:38:49,832 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:52,485 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:52,485 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:52,486 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:52,486 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:54,350 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:38:56,715 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:56,715 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:38:56,716 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:56,716 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:38:58,559 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:00,867 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:00,867 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:01,013 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:01,013 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:02,875 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:05,224 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:05,224 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:05,225 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:05,225 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:07,084 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:17,313 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:17,313 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:17,461 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:17,461 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:19,315 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:21,629 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:21,629 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:21,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:21,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:23,494 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:25,805 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:25,805 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:25,806 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:25,806 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:27,663 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:30,110 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:30,110 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:30,111 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:30,111 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:31,973 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:34,350 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:34,350 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:34,351 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:34,351 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:36,206 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:38,653 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:38,653 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:38,801 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:38,801 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:40,670 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:42,978 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:42,978 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:42,979 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:42,979 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:44,829 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:39:47,324 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:47,324 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:39:47,325 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:47,325 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:39:49,169 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:40:12,396 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:12,396 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:12,397 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:12,397 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:14,264 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:40:16,707 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:16,707 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:16,708 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:16,708 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:18,580 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:40:20,858 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:20,858 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:20,859 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:20,859 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:22,727 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:40:25,045 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:25,045 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:25,046 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:25,046 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:26,917 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:40:29,383 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:29,383 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:29,384 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:29,384 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:40:31,255 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:40:40,515 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:40,515 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:40,526 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-22 12:40:40,526 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-22 12:40:40,526 - root - ERROR - Exception: global name 'unknown_person_msg' is not defined
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 121, in speak
+    msg = unknown_person_msg
+NameError: global name 'unknown_person_msg' is not defined
+2018-08-22 12:40:52,959 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:40:54,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:40:54,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:40:59,692 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:59,692 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:40:59,693 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-22 12:40:59,693 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-22 12:40:59,694 - root - ERROR - Exception: global name 'unknown_person_msg' is not defined
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 121, in speak
+    msg = unknown_person_msg
+NameError: global name 'unknown_person_msg' is not defined
+2018-08-22 12:41:11,699 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:41:13,507 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:41:13,507 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:41:19,604 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:19,604 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:19,605 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 -1]
+2018-08-22 12:41:19,605 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 -1]
+2018-08-22 12:41:22,267 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:41:24,702 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:24,702 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:24,703 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-22 12:41:24,703 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 -1 -1]
+2018-08-22 12:41:24,704 - root - ERROR - Exception: global name 'unknown_person_msg' is not defined
+Traceback (most recent call last):
+  File "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/webcam_facerec.py", line 121, in speak
+    msg = unknown_person_msg
+NameError: global name 'unknown_person_msg' is not defined
+2018-08-22 12:41:36,914 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:41:38,471 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:41:38,471 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:41:41,629 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:41,629 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:41,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:41:41,630 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:41:44,285 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:41:46,852 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:46,852 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:46,853 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:41:46,853 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:41:48,727 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:41:55,573 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:55,573 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:41:55,574 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:41:55,574 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:41:57,443 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:42:02,355 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:42:02,355 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:42:02,357 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:42:02,357 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:42:04,216 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:42:06,884 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:42:06,884 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:42:06,884 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:42:06,884 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:42:49,327 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:42:55,325 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:42:55,325 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:45:04,404 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [21 34 34]
+2018-08-22 12:45:04,404 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [21 34 34]
+2018-08-22 12:45:04,406 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 34 34]
+2018-08-22 12:45:04,406 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [-1 34 34]
+2018-08-22 12:45:06,951 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:09,298 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:09,298 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:09,299 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:09,299 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:11,176 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:15,003 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:15,003 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:15,003 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:15,003 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:16,885 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:19,229 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:19,229 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:19,230 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:19,230 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:21,103 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:23,532 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:23,532 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:23,533 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:23,533 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:25,402 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:29,174 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:29,174 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:29,175 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:29,175 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:31,045 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:43,791 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:43,791 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:43,792 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:43,792 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:45,660 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:49,361 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:49,361 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:49,372 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:49,372 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:51,244 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:45:57,629 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:57,629 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:45:57,634 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:57,634 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:45:59,527 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:47:38,744 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:47:40,297 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:47:40,297 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:47:53,144 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:47:53,144 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:47:53,145 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:47:53,145 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:47:55,763 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:47:58,434 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:47:58,434 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:47:58,448 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:47:58,448 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:48:00,326 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:48:06,190 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:48:06,190 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:48:06,191 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:48:06,191 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:48:08,061 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:48:10,458 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:48:10,458 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:48:10,459 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:48:10,459 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:48:12,332 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:49:03,427 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:49:05,126 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:49:05,126 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:49:12,788 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:49:12,788 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:49:12,789 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:49:12,789 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:49:14,747 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:49:17,071 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:49:17,071 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:49:17,072 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:49:17,072 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:49:18,940 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:49:21,383 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:49:21,383 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:49:21,531 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:49:21,531 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:16,387 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 12:50:18,063 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:50:18,063 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 12:50:21,531 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:21,531 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:21,532 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:21,532 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:24,626 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:50:27,408 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:27,408 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:27,409 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:27,409 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:30,370 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:50:34,498 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:34,498 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:34,499 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:34,499 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:37,451 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:50:39,851 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:39,851 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:39,852 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:39,852 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:42,809 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:50:45,336 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:45,336 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:50:45,337 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:45,337 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:50:48,282 - __main__ - INFO - Predicted identity: 41
+2018-08-22 12:51:04,400 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:51:04,400 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 12:51:04,401 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 12:51:04,401 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:04:33,855 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 13:04:35,498 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:04:35,498 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:04:39,647 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:04:39,647 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:04:39,648 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:04:39,648 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:04:41,924 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:04:44,986 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:04:44,986 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:04:44,986 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:04:44,986 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:04:46,870 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:04:49,394 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:04:49,394 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:04:49,395 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:04:49,395 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:04:51,298 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:05:04,956 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:05:04,956 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:05:04,957 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:05:04,957 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:05:06,841 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:05:14,916 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:05:14,916 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:05:14,916 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:05:14,916 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:05:16,811 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:06:21,075 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 13:06:22,622 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:06:22,622 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:06:26,113 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:06:26,113 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:06:26,114 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:06:26,114 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:06:28,770 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:06:38,666 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:06:38,666 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:06:38,670 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:06:38,670 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:06:40,540 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:07:19,172 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:07:19,172 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:07:19,173 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:07:19,173 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:07:21,032 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:07:23,429 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:07:23,429 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:07:23,430 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:07:23,430 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:07:25,287 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:16:54,623 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 13:17:00,663 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:17:00,663 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:17:33,913 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:17:33,913 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:17:33,914 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:17:33,914 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:17:36,427 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:18:33,190 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:18:33,190 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:18:33,191 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:18:33,191 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:18:35,063 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:18:37,710 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:18:37,710 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:18:37,711 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:18:37,711 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:18:39,586 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:18:52,215 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:18:52,215 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:18:52,215 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:18:52,215 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:18:54,086 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:19:06,459 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:06,459 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:06,461 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:06,461 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:08,350 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:19:12,597 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:12,597 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:12,598 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:12,598 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:14,461 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:19:21,443 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:21,443 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:21,464 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:21,464 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:23,339 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:19:26,131 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:26,131 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:19:26,132 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:26,132 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:19:27,999 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:21:03,105 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:21:03,105 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:21:03,106 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:21:03,106 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:21:04,961 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:21:07,406 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:21:07,406 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:21:07,407 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:21:07,407 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:21:09,279 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:21:12,584 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:21:12,584 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:21:12,585 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:21:12,585 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:21:14,447 - __main__ - INFO - Predicted identity: 41
+2018-08-22 13:28:27,723 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 13:28:33,105 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:28:33,105 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:34:02,724 - root - INFO - Configuration parameters are: {u'face_recognition_confidence_threshold': 0.25, u'unknown_class': -1, u'batch_size': 3, u'face_area_threshold': 0.03, u'cam_height': 480, u'svm_model_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl', u'label_mapping_path': u'/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl', u'frame_skip_factor': 5, u'resolution': u'480p', u'cam_width': 858}
+2018-08-22 13:34:08,681 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:34:08,681 - face_trigger.model.deep.FaceRecognizer - DEBUG - No DNN model path specified, using default.
+2018-08-22 13:36:17,607 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:36:17,607 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices before thresholding: [34 34 34]
+2018-08-22 13:36:17,608 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:36:17,608 - face_trigger.model.deep.FaceRecognizer - DEBUG - Predicted indices after thresholding: [34 34 34]
+2018-08-22 13:36:20,413 - __main__ - INFO - Predicted identity: 41
