@@ -3,7 +3,7 @@
     "cam_height": 480,
     "cam_width": 858,
     "batch_size": 3,
-    "face_recognition_confidence_threshold": 0.25,
+    "face_recognition_confidence_threshold": 0.4,
     "frame_skip_factor": 5,
     "svm_model_path": "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/classifier.pkl",
     "label_mapping_path": "/home/aws_cam/lambda_test/face-trigger-lambda/face-trigger-lambda/model/label_mapping.pkl",
