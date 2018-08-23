@@ -1,5 +1,6 @@
 [Unit]
 Description=Face Trigger -- Real-time face recognition
+After=sound.target
 
 [Service]
 Type=simple
