@@ -3,7 +3,7 @@
 
 This repository houses the requisite code to run real-time face recognition using the [Face Trigger](https://github.com/SofturaInternal/face-trigger) library.
 
-![screenshot](https://github.com/SofturaInternal/face-trigger-lambda/blob/master/imgs/screenshot.png)
+![screenshot](https://github.com/nautilusPrime/deeplens_facerec/blob/master/imgs/screenshot.png?raw=true)
 
 ## Setting up DeepLens
 1. Follow the [getting started](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started.html) guide.
