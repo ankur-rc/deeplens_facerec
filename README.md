@@ -1,9 +1,9 @@
 # Face Trigger ![lambda](https://latex.codecogs.com/gif.latex?%5Cdpi%7B120%7D%20%5CLARGE%20%5Clambda)
 ``` Inference lambda function for DeepLens```
 
-This repository houses the requisite code to run real-time face recognition using the [Face Trigger](https://github.com/nautilusPrime/facerec_dml) library.
+This repository houses the requisite code to run real-time face recognition using the [Face Trigger](https://github.com/ankur-rc/facerec_dml) library.
 
-![screenshot](https://github.com/nautilusPrime/deeplens_facerec/blob/master/imgs/screenshot.png?raw=true)
+![screenshot](https://github.com/ankur-rc/deeplens_facerec/blob/master/imgs/screenshot.png?raw=true)
 
 ## Setting up DeepLens
 1. Follow the [getting started](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started.html) guide.
