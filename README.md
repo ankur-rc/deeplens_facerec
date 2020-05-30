@@ -3,8 +3,6 @@
 
 This repository houses the requisite code to run real-time face recognition using the [Face Trigger](https://github.com/ankur-rc/facerec_dml) library.
 
-![screenshot](https://github.com/ankur-rc/deeplens_facerec/blob/master/imgs/screenshot.png?raw=true)
-
 ## Setting up DeepLens
 1. Follow the [getting started](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-getting-started.html) guide.
 
